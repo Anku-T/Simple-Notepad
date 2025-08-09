@@ -1,0 +1,47 @@
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --background-color: #121212;
+  --h1-color: #0dcdae;
+  --text-area: #282828;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1 {
+  text-align: center;
+  color: var(--h1-color);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+textarea {
+  background-color: var(--text-area);
+  border-radius: 5px;
+  resize: none;
+  width: 98%;
+  height: 87vh;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  border: none;
+}
+textarea:focus {
+  outline: none;
+}
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  textarea {
+    width: 95%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    height: 90vh;
+  }
+}
